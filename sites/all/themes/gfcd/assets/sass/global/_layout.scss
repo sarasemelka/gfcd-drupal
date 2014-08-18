@@ -1,0 +1,32 @@
+
+.wrapper {
+  @include cf;
+  max-width: 1600px;
+  padding: 32px 5%;
+  margin: 0 auto;
+  
+  @include bp-min-width($medium) {
+    padding: $base*3 2%;
+  }
+}
+
+
+.main {
+  background: $creme;
+}
+
+.content-body {
+  @include bp-min-width($medium) {
+    float: left;
+    width: 66.66%;
+    padding: 0 5% 0 3%;
+  }
+}
+
+.sidebar-right {
+  @include bp-min-width($medium) {
+    float: right;
+    width: 33.33%;
+    padding: 10px 3% 0 0;
+  }
+}

@@ -1,0 +1,17 @@
+name = GFCD
+description = GFCD theme based on the Naked theme from Steven Wanderski.
+package = Core
+version = VERSION
+core = 7.x
+
+regions[custom_blocks] = Custom Blocks
+regions[content] = Content
+regions[sidebar_left]  = Left sidebar
+regions[sidebar_right] = Right sidebar
+regions[header] = Header
+regions[footer] = Footer
+regions[highlighted] = Highlighted
+regions[help] = Help
+
+stylesheets[all][] = assets/css/application.css
+scripts[] = assets/js/scripts.js

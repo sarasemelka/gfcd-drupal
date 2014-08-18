@@ -1,0 +1,33 @@
+
+[class*="icon-"] {
+  display: inline-block;
+/*   background: $sprite no-repeat 0 0; */
+}
+
+.icon-arrow-down {
+  width: 33px;
+  height: 19px;
+  background: $arrow-down no-repeat 0 0;
+}
+
+.icon-arrow-right {
+  width: 23px;
+  height: 23px;
+  background: $arrow-right no-repeat 0 0;
+}
+
+
+
+/*
+.icon-twitter {
+  width: 26px;
+  height: 21px;
+  background-position: 0 -350px;
+}
+
+.icon-facebook {
+  width: 13px;
+  height: 22px;
+  background-position: 0 -374px;
+}
+*/

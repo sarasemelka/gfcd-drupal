@@ -1,0 +1,52 @@
+.form-newsletter {
+  position: relative;
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: left;
+
+  .form-item {
+    position: relative;
+    height: 48px;
+    margin-right: 97px;
+    padding: 10px 16px 0;
+    background: #fff;
+    border: 1px solid $dk-grey;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    
+    &.error {
+      border-color: $red;
+    }
+  }
+  
+  label {
+    color: $dk-grey;
+    font-weight: $semi;
+    font-size: 18px;
+    font-style: italic;
+  }
+  
+  input {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    z-index: 10;
+    border: none;
+    background: transparent;
+    
+    &:focus {
+      border: none;
+    }
+  }
+  
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 98px;
+    height: 48px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+}

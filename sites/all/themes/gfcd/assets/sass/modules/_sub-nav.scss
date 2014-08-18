@@ -1,0 +1,12 @@
+
+.sub-nav {
+  padding: $base 0;
+  background: $lt-grey;
+  text-align: center;
+  
+  a {
+    @include font-size(24px);
+    margin: 0 10%;
+    font-weight: $semi;
+  }
+}

@@ -1,0 +1,134 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600,600italic,700,700italic,900);
+
+$sans: "Source Sans Pro", Helvetica, arial, sans-serif;
+
+$light: 300;
+$book:  400;
+$semi:  600;
+$bold:  700;
+$heavy: 900;
+
+$base:  24px;
+
+body {
+  color: $dk-grey-2;
+  font: $book 1em/1.5em $sans;
+}
+
+h1,h2,h3,h4,h5 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: $heavy;
+
+  @include bp-min-width($medium) {
+    font-size: 72px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 38px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: $semi;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: $semi;
+}
+
+.page-title {
+  position: relative;
+  margin-bottom: $base*1.5;
+  padding-bottom: $base*1.5;
+  color: $red;
+  
+  @include bp-min-width($medium) {
+    font-size: 52px;
+  }
+  
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 2px;
+    background: $red;
+  }
+}
+
+.title-section {
+  margin-bottom: $base*1.5;
+  padding-bottom: $base*1.5;
+  border-bottom: 1px solid $lt-grey;
+  font-weight: $bold;
+}
+
+.title-sub-section {
+  margin-bottom: $base/2;
+  padding-bottom: $base/2;
+  border-bottom: 1px solid $lt-grey;
+  color: $dk-blue;
+  font-size: 18px;
+  font-weight: $bold;
+  text-transform: uppercase;
+}
+
+.title-block {
+  color: $navy;
+}
+
+p {
+
+}
+
+strong {
+  font-weight: $bold;
+}
+
+em {
+  font-style: italic;
+}
+
+.label {
+  color: $dk-grey;
+  font-weight: $bold;
+}
+
+.body p,
+.body ul,
+.body ol {
+  margin-bottom: $base;
+
+  &:last-child, &.label {
+    margin-bottom: 0;
+  }
+}
+
+.body ul,
+.body ol {
+  margin-left: 1.5em;
+}
+
+.body ul li {
+  list-style: disc;
+}
+
+.body ol li {
+  list-style: decimal;
+}
+
+.body h2 {
+  margin-bottom: 12px;
+}

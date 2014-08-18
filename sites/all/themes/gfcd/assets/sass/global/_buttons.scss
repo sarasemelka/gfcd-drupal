@@ -1,0 +1,106 @@
+
+a {
+	@include transition(all 0.1s ease-in);
+	color: $blue;
+	&:hover {
+    color: darken($blue, 10%);
+	}
+}
+
+%btn {
+  display: block;
+  padding: 0.75em 1.25em;
+  background: $blue;
+  border-radius: 3px;
+  color: #fff;
+  font: $semi 1em/1 $sans;
+  text-transform: uppercase;
+  text-align: center;
+  
+  &:hover {
+    background: $dk-blue;
+    color: #fff;
+  }
+  
+  @include bp-min-width($medium) {
+    display: inline-block;
+  }    
+}
+
+.btn {
+  @extend %btn;
+  
+    &.red {
+    background: $red;
+    &:hover {
+      background: $dk-red;
+    }
+  }
+  
+  &.green {
+    background: $green;
+    &:hover {
+      background: $dk-green;
+    }
+  }
+
+  &.dk-green {
+    background: $dk-green;
+    &:hover {
+      background: darken($dk-green, 5%);
+    }
+  }
+  
+  &.orange {
+    background: $orange;
+    &:hover {
+      background: darken($orange, 5%);
+    }
+  }
+
+  &.dk-orange {
+    background: $dk-orange;
+    &:hover {
+      background: darken($dk-orange, 5%);
+    }
+  }  
+  &.white {
+    background: #fff;
+    color: $navy;
+    &:hover {
+      background: $lt-grey;
+    }
+  }
+
+  &.grey {
+    background: $dk-grey;
+    &:hover {
+      background: $dk-grey-2;
+    }
+  }
+}
+
+.btn.large {
+  font-size: 24px;
+}
+
+.cta-link {
+  font-size: 24px;
+}
+
+input[type="submit"],
+button {
+  @extend %btn;
+	@include transition(all 0.15s ease-in);
+  cursor: pointer;
+  font-family: $sans;
+  font-weight: $bold;
+  
+  @include bp-max-width($small) {
+    width: 100%;
+  }
+  
+  &:disabled {
+    cursor: none;
+  }
+}

@@ -1,0 +1,19 @@
+
+.messages {
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  
+  &.status {
+    background: $green;
+  }
+  
+  &.error {
+    background: $red;
+  }
+  
+  .krumo-root {
+    text-align: left;
+    color: $black;
+  }
+}
