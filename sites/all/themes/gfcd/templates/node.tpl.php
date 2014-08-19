@@ -2,7 +2,7 @@
 <section id="main" class="main">
   <div class="wrapper">
 
-    <section class="content">
+    <section class="page-content">
     
       <h1 class="page-title"><?php print $title; ?></h1>
       

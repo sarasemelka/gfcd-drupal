@@ -18,6 +18,66 @@
       <div class="body">
         <?php print render($content); ?>
       </div>
+      
+      <div class="organize-steps">
+      
+        <div class="step">
+          <div class="step-number">1</div>
+          <?php
+            $block = module_invoke('block', 'block_view', '7');
+            print render($block['content']);
+          ?>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <?php
+            $block = module_invoke('block', 'block_view', '8');
+            print render($block['content']);
+          ?>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <?php
+            $block = module_invoke('block', 'block_view', '9');
+            print render($block['content']);
+          ?>
+        </div>
+
+        <div class="step">
+          <div class="step-number">4</div>
+          <?php
+            $block = module_invoke('block', 'block_view', '10');
+            print render($block['content']);
+          ?>
+        </div>
+
+        <div class="step">
+          <div class="step-number">5</div>
+          <?php
+            $block = module_invoke('block', 'block_view', '11');
+            print render($block['content']);
+          ?>
+        </div>
+
+        <div class="step">
+          <div class="step-number">6</div>
+          <?php
+            $block = module_invoke('block', 'block_view', '12');
+            print render($block['content']);
+          ?>
+        </div>
+
+        <div class="steps-footer">
+          <?php
+            $block = module_invoke('block', 'block_view', '13');
+            print render($block['content']);
+          ?>
+        </div>
+      
+      </div>
+
     
   </div>
 </section>
