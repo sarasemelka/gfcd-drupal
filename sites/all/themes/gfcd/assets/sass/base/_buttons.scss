@@ -86,11 +86,9 @@ a {
 
 
 .cta-link {
-  font-size: 24px;
+  @include font-size(24px);
   
   &.with-arrow {
-  @include font-size(18px);
-
     &:after {
       content: "";
       display: inline-block;
@@ -103,6 +101,9 @@ a {
   }
 }
 
+aside .cta-link {
+  @include font-size(18px);
+}
 
 input[type="submit"],
 button {

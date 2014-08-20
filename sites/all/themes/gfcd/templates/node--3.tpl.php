@@ -17,7 +17,6 @@
         $block = module_invoke('block', 'block_view', '1');
         print render($block['content']);
         ?>
-        <p><a href="" class="cta-link">Sign Up <i class="icon-arrow-right"></i></a></p>
       </div>
 
       <div class="col-1-3">
@@ -26,7 +25,6 @@
         $block = module_invoke('block', 'block_view', '2');
         print render($block['content']);
         ?>
-        <p><a href="" class="cta-link">Learn More <i class="icon-arrow-right"></i></a></p>
       </div>
 
       <div class="col-1-3">
@@ -35,7 +33,6 @@
         $block = module_invoke('block', 'block_view', '3');
         print render($block['content']);
         ?>
-        <p><a href="" class="cta-link">Learn More <i class="icon-arrow-right"></i></a></p>
       </div>
     
     </div>
@@ -48,10 +45,9 @@
     <div class="col-1-2 block-get-involved">
       <h3 class="title-block">Get Involved</h3>
       <ul class="social-links">
-        <li><a href="" class="ss-icon ss-social-circle">twitter</a></li>
-        <li><a href="" class="ss-icon ss-social-circle">facebook</a></li>
-        <li><a href="" class="ss-icon ss-social-circle">googleplus</a></li>
-        <li><a href="" class="ss-icon ss-social-circle">youtube</a></li>
+        <li><a href="https://twitter.com/natlfccoalition" class="ss-icon ss-social-circle">twitter</a></li>
+        <li><a href="https://www.facebook.com/NationalFCCoalition" class="ss-icon ss-social-circle">facebook</a></li>
+        <li><a href="https://www.youtube.com/user/globalhealthcatalyst/" class="ss-icon ss-social-circle">youtube</a></li>
       </ul>
       <ul class="hashtags">
         <li>#Dance4Demand</li>
