@@ -1,0 +1,24 @@
+
+.event-page .wrapper {
+  padding-bottom: $base*2;
+}
+
+.event-profile {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.event-body {
+  margin-bottom: $base*2;
+  text-align: center;
+  
+  .page-title:after {
+    left: 50%;
+    margin-left: -50px;
+  }
+  
+  .event-location {
+    font-size: 24px;
+    font-weight: $semi;
+  }
+}

@@ -1,45 +1,33 @@
 <?php /* Event Template */ ?>
-<section id="main" class="main">
+<?php // dpm($node); ?> 
+<section id="main" class="main event-page">
   <div class="wrapper">
+  
+    <div class="event-profile">
          
-      <div class="body">
+      <div class="event-body body">
         <h1 class="page-title"><?php print $title; ?></h1>
-        <p class="location"><?php print $node->field_location[LANGUAGE_NONE][0]['value']; ?></p>
+        <p class="event-location"><?php print $node->field_location[LANGUAGE_NONE][0]['value']; ?></p>
         <?php print render($content); ?>
       </div>
       
       <?php
-      print $node->field_video[LANGUAGE_NONE][0]['value'];
-      print $node->field_photos[LANGUAGE_NONE][0]['value'];
-
-      
-      // Get the field collection items.
-      $fc_fields = field_get_items('node', $node, 'field_photos');
-      
-      // Extract the field collection item ids
-      $ids = array();
-      foreach ($fc_fields as $fc_field) {
-        $ids[] = $fc_field['value'];
-      }
-      
-      // Load up the field collection items
-      $items = field_collection_item_load_multiple($ids);
-      
-      // Loop through the items and extract field values
-      foreach ($items as $item) {
-        $image_fields = field_get_items('field_collection_item', $item, 'field_image');
-        $image = array_shift($image_fields);
-        $image_style_path = image_style_url('event-thumb', $image['uri']);
-        $image_path = $image['filename'];
-        print '<img src="' . $image_style_path . $image_path . '">';
-      }
-
-      $wrapper = entity_metadata_wrapper('node', $node);
-      dpm($wrapper->getPropertyInfo());
-      
+        $field = field_get_items('node', $node, 'field_video');
+        if ($field):
       ?>
+      <div class="event-video">
+        <?php print $node->field_video[LANGUAGE_NONE][0]['value']; ?>
+      </div>
+      <?php endif; ?>
+      
+    </div>
     
   </div>
 </section>
 
-<?php dpm($node); ?> 
+<section class="event-photos">
+  <?php
+    $block = module_invoke('views', 'block_view', 'events-block_2');
+    print render($block['content']);
+  ?>
+</section>

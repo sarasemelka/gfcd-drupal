@@ -82,21 +82,34 @@
           console.log(homeInfoBlocks);
         }
         
-  /*
         console.log(windowPos);
         console.log(homeMainPos);
-  */
-      
+ 
       });
   
-    }  
+    }
+    
+    eventSlider = function() {
+      
+      $(".event-slider").owlCarousel({
+      
+        autoPlay: 3000,
+        itemsCustom : [
+        [0, 1],
+        [400, 2],
+        [700, 3],
+        ]        
+      });
+      
+    }
 
 
     labelFade();
     scrollTo();
     menuToggle();
     newsletterValidation();
-    iconZoomIn();
+    // iconZoomIn();
+    eventSlider();
     
   });
   

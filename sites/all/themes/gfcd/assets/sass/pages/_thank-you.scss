@@ -1,0 +1,22 @@
+
+.page-node-13 .main {
+  padding: $base*2 0;
+  border-top: 1px solid $lt-grey;
+  text-align: center;
+
+  @include bp-min-width($medium) {
+    min-height: 400px;
+    padding: $base*5 0;
+  }
+  
+  h2 {
+    margin-bottom: 36px;
+    font-size: 50px;
+    line-height: 1.1;
+    font-style: italic;
+  }
+  
+  .cta-link {
+    font-size: 24px;
+  }
+}

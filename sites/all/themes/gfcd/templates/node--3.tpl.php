@@ -12,7 +12,7 @@
     <div class="home-info-blocks">
     
       <div class="col-1-3">
-        <div class="icon"></div>
+<!--         <div class="icon"></div> -->
         <?php
         $block = module_invoke('block', 'block_view', '1');
         print render($block['content']);
@@ -21,7 +21,7 @@
       </div>
 
       <div class="col-1-3">
-        <div class="icon"></div>
+<!--         <div class="icon"></div> -->
         <?php
         $block = module_invoke('block', 'block_view', '2');
         print render($block['content']);
@@ -30,7 +30,7 @@
       </div>
 
       <div class="col-1-3">
-        <div class="icon"></div>
+<!--         <div class="icon"></div> -->
         <?php
         $block = module_invoke('block', 'block_view', '3');
         print render($block['content']);
@@ -73,7 +73,7 @@
         <input type="hidden" name="link" value="groups"/>
         <input type="hidden" name="linkKey" value="8995"/>
         <input type="hidden" name="tag" value="newsletter"/>
-        <input type="hidden" name="redirect" value="http://www.femalecondomday.org/thank-you.php">
+        <input type="hidden" name="redirect" value="http://gfcd.elevenelevencreative.com/thank-you.php">
         <button type="Submit" value="Sign up" class="btn grey">Sign Up</button>
       </form>
     </div>

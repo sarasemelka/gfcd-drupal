@@ -2,7 +2,7 @@
 .wrapper {
   @include cf;
   max-width: 1600px;
-  padding: 32px 5%;
+  padding: $base*1.5 5%;
   margin: 0 auto;
   
   @include bp-min-width($medium) {
@@ -12,9 +12,6 @@
 
 .main {
   background: $creme;
-}
-
-.node-type-page .main {
   border-top: 1px solid $lt-grey;
   border-bottom: 1px solid $lt-grey;
 }

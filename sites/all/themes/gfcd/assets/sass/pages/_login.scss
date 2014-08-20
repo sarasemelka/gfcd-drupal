@@ -1,0 +1,17 @@
+
+#user-login {
+  padding: $base*2 5%;
+  background: $creme;
+  border-top: 1px solid $lt-grey;
+  border-bottom: 1px solid $lt-grey;
+
+  @include bp-min-width($medium) {
+    min-height: 500px;
+    padding: $base*3 5%;
+  }
+  
+  > div {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}

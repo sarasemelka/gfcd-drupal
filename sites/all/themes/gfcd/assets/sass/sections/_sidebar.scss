@@ -1,6 +1,5 @@
 
 .sidebar {
-  
   .block {
     margin-bottom: $base;
     padding: 16px 20px 20px;
@@ -35,14 +34,4 @@
   p {
     margin-bottom: 12px;
   }
-}
-
-.sidebar .cta-link:after {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  width: 23px;
-  height: 23px;
-  margin-left: 6px;
-  background: $arrow-right no-repeat 0 0;
 }
