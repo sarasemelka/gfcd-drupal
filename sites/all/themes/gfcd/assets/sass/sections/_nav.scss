@@ -1,8 +1,12 @@
 
 .main-nav {
   position: relative;
+
+  @include bp-min-max($medium, $xlarge) {
+    text-align: center;
+  }
   
-  @include bp-min-width($large) {
+  @include bp-min-width($xlarge) {
     float: right;
     padding-top: 24px;
   }
@@ -14,10 +18,14 @@
   width: 100%;
   padding-top: 12px;
   
-  @include bp-min-width($large) {
+  @include bp-min-width($medium) {
     display: block;
     padding-top: 0;
     background: no-repeat;
+  }
+
+  @include bp-min-max($medium, $xlarge) {
+    text-align: center;
   }
 
   &.show {
@@ -26,10 +34,22 @@
 }
 
 .main-nav li {
-  float: none;
   margin: 0;
   
-  @include bp-min-width($large) {
+  @include bp-min-max($medium, $xlarge) {
+    display: inline-block;
+    margin: 0 10px;
+    
+    &.first {
+      margin-left: 0;
+    }
+    
+    &.last {
+      margin-right: 0;
+    }
+  }
+
+  @include bp-min-width($xlarge) {
     position: relative;
     float: left;
     margin-left: 42px;
@@ -50,13 +70,13 @@
     background: $dk-red;
   }
   
-  @include bp-max-width($large) {
+  @include bp-max-width($medium) {
     background: $red;
     color: $lt-grey;
     font-size: 18px;
   }
   
-  @include bp-min-width($large) {
+  @include bp-min-width($medium) {
     display: block;
     padding: 0;
     color: $navy;
@@ -70,7 +90,6 @@
         opacity: 1;
         bottom: -4px;
       }
-      
     }
     
     &:after {
@@ -109,12 +128,9 @@
     color: #fff;
   }
   
-  @include bp-min-width($large) {
-    margin-top: 20px;
-  }
-  
-  @include bp-min-width($large) {
+  @include bp-min-width($medium) {
     display: none;
+    margin-top: 20px;
   }
 }
 

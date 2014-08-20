@@ -1552,7 +1552,7 @@ button {
 @media (min-width: 740px) {
   .page-node-13 .main {
     min-height: 400px;
-    padding: 96px 0;
+    padding: 120px 0;
   }
 }
 .page-node-13 .main h2 {
@@ -1568,10 +1568,16 @@ button {
 .header {
   border-top: 6px solid #ecf0f1;
 }
+
 .header .wrapper {
   padding: 12px 5%;
 }
 @media (min-width: 740px) {
+  .header .wrapper {
+    padding: 24px 2%;
+  }
+}
+@media (min-width: 1300px) {
   .header .wrapper {
     padding: 24px 5%;
   }
@@ -1579,6 +1585,21 @@ button {
 
 .logo {
   float: left;
+}
+@media (max-width: 1250px) and (min-width: 740px) {
+  .logo {
+    *zoom: 1;
+    float: none;
+    width: 400px;
+    margin: 0 auto 24px;
+  }
+  .logo:before, .logo:after {
+    content: " ";
+    display: block;
+  }
+  .logo:after {
+    clear: both;
+  }
 }
 .logo a {
   color: #2c3e50;
@@ -1643,7 +1664,12 @@ button {
 .main-nav {
   position: relative;
 }
-@media (min-width: 1000px) {
+@media (max-width: 1250px) and (min-width: 740px) {
+  .main-nav {
+    text-align: center;
+  }
+}
+@media (min-width: 1250px) {
   .main-nav {
     float: right;
     padding-top: 24px;
@@ -1656,11 +1682,16 @@ button {
   width: 100%;
   padding-top: 12px;
 }
-@media (min-width: 1000px) {
+@media (min-width: 740px) {
   .main-nav ul {
     display: block;
     padding-top: 0;
     background: no-repeat;
+  }
+}
+@media (max-width: 1250px) and (min-width: 740px) {
+  .main-nav ul {
+    text-align: center;
   }
 }
 .main-nav ul.show {
@@ -1668,10 +1699,21 @@ button {
 }
 
 .main-nav li {
-  float: none;
   margin: 0;
 }
-@media (min-width: 1000px) {
+@media (max-width: 1250px) and (min-width: 740px) {
+  .main-nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .main-nav li.first {
+    margin-left: 0;
+  }
+  .main-nav li.last {
+    margin-right: 0;
+  }
+}
+@media (min-width: 1250px) {
   .main-nav li {
     position: relative;
     float: left;
@@ -1691,14 +1733,14 @@ button {
   color: #fff;
   background: #c0392b;
 }
-@media (max-width: 1000px) {
+@media (max-width: 740px) {
   .main-nav li a {
     background: #e74c3c;
     color: #ecf0f1;
     font-size: 18px;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 740px) {
   .main-nav li a {
     display: block;
     padding: 0;
@@ -1747,14 +1789,10 @@ button {
   display: inline-block;
   color: #fff;
 }
-@media (min-width: 1000px) {
-  .mobile-menu-btn {
-    margin-top: 20px;
-  }
-}
-@media (min-width: 1000px) {
+@media (min-width: 740px) {
   .mobile-menu-btn {
     display: none;
+    margin-top: 20px;
   }
 }
 

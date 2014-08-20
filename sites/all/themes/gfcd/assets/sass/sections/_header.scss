@@ -1,18 +1,30 @@
 
 .header {
   border-top: 6px solid $lt-grey;
-  
-  .wrapper {
-    padding: 12px 5%;
+}
 
-    @include bp-min-width($medium) {
-      padding: $base 5%;
-    }    
+.header .wrapper {
+  padding: 12px 5%;
+
+  @include bp-min-width($medium) {
+    padding: $base 2%;
+  }
+
+  @include bp-min-width(1300px) {
+    padding: $base 5%;
   }
 }
 
+
 .logo {
   float: left;
+
+  @include bp-min-max($medium, $xlarge) {
+    @include cf;
+    float: none;
+    width: 400px;
+    margin: 0 auto $base;
+  }
 
   a {
     color: $navy;

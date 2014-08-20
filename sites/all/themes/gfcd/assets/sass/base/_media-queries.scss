@@ -1,5 +1,5 @@
 
-$xlarge:  1100px;
+$xlarge:  1250px;
 $large:   1000px;
 $medium:  740px;
 $small:   600px;
@@ -23,6 +23,6 @@ $tiny:    350px;
 	@media (min-width: $point) { @content; }
 }
 
-@mixin bp-max-min($max, $min) {
+@mixin bp-min-max($min, $max) {
 	@media (max-width: $max) and (min-width: $min) { @content; }
 }

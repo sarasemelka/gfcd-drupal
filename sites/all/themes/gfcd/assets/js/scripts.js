@@ -102,6 +102,12 @@
       });
       
     }
+    
+    fitVids = function() {
+      
+      $('.event-video').fitVids();
+      
+    }
 
 
     labelFade();
@@ -110,6 +116,7 @@
     newsletterValidation();
     // iconZoomIn();
     eventSlider();
+    fitVids();
     
   });
   

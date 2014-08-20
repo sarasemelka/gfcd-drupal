@@ -16,4 +16,5 @@ regions[help] = Help
 stylesheets[all][] = assets/css/application.css
 
 scripts[] = assets/js/owl.carousel.min.js
+scripts[] = assets/js/jquery.fitvids.js
 scripts[] = assets/js/scripts.js
