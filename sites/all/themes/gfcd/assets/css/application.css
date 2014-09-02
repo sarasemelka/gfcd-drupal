@@ -934,7 +934,7 @@ button {
   color: #fff;
 }
 .hero .wrapper {
-  padding: 24px 5% 48px;
+  padding: 36px 5% 48px;
 }
 @media (min-width: 800px) {
   .hero .wrapper {
@@ -1006,7 +1006,6 @@ button {
 
 .page-node-3 .hero {
   position: relative;
-  padding: 48px 5% 72px;
   background: #212121 url('../images/hero.jpg?1408314303') no-repeat center top;
   background-size: cover;
   border-top: 6px solid #ecf0f1;
