@@ -276,12 +276,14 @@ h5 {
 
 .page-title {
   position: relative;
-  margin-bottom: 36px;
-  padding-bottom: 36px;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
   color: #e74c3c;
 }
 @media (min-width: 800px) {
   .page-title {
+    margin-bottom: 36px;
+    padding-bottom: 36px;
     font-size: 52px;
   }
 }
@@ -938,8 +940,6 @@ button {
 }
 .hero .page-title {
   position: relative;
-  margin-bottom: 36px;
-  padding-bottom: 36px;
   color: #fff;
 }
 .hero .page-title:after {

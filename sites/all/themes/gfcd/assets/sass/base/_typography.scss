@@ -49,11 +49,13 @@ h5 {
 
 .page-title {
   position: relative;
-  margin-bottom: $base*1.5;
-  padding-bottom: $base*1.5;
+  margin-bottom: $base;
+  padding-bottom: $base;
   color: $red;
   
   @include bp-min-width($medium) {
+    margin-bottom: $base*1.5;
+    padding-bottom: $base*1.5;
     font-size: 52px;
   }
   
