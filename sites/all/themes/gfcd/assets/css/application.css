@@ -247,7 +247,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 42px;
-  font-weight: 900;
+  font-weight: 700;
 }
 @media (min-width: 740px) {
   h1 {
@@ -826,7 +826,7 @@ button {
 }
 @media (min-width: 740px) {
   .hero .wrapper {
-    padding: 72px 0 84px;
+    padding: 48px 0 60px;
   }
 }
 .hero .page-title {
@@ -846,13 +846,15 @@ button {
   background: #fff;
 }
 .hero h2 {
-  margin-bottom: 24px;
   font-size: 32px;
+  font-size: 2rem;
+  margin-bottom: 24px;
 }
 @media (min-width: 740px) {
   .hero h2 {
-    margin-bottom: 36px;
     font-size: 48px;
+    font-size: 3rem;
+    margin-bottom: 36px;
     line-height: 1;
   }
 }
@@ -865,6 +867,7 @@ button {
 @media (min-width: 740px) {
   .hero p:first-of-type {
     font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 .hero p:last-of-type {
@@ -933,6 +936,12 @@ button {
     margin-bottom: 36px;
     font-size: 48px;
     line-height: 1;
+  }
+}
+@media (min-width: 740px) {
+  .page-node-3 .hero p:first-of-type {
+    font-size: 32px;
+    font-size: 2rem;
   }
 }
 .page-node-3 .hero .icon-arrow-down {
@@ -1417,7 +1426,10 @@ button {
     margin-bottom: 12px;
   }
 }
-@media (min-width: 740px) {
+.lets-dance .btn {
+  margin-top: 12px;
+}
+@media (min-width: 1000px) {
   .lets-dance .btn {
     margin-left: 32px;
   }

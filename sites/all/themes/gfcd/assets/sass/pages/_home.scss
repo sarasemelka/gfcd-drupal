@@ -146,7 +146,9 @@
   }
   
   .btn {
-    @include bp-min-width($medium) {
+    margin-top: 12px;
+    
+    @include bp-min-width($large) {
       margin-left: 32px;
     }
   }
