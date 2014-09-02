@@ -33,25 +33,9 @@
   }
 }
 
-@include keyframes(zoomIn) {
-  0% {
-    @include scale(0);
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
-  
-  100% {
-    @include scale(1);
-  }
-}
-
 .animate .icon {
  @include animation(zoomIn 1s 0.5s both);
 }
-
 
 .bottom {
   @include cf;
@@ -113,6 +97,24 @@
   
 }
 
+.song-download {
+  background: $blue;
+  color: #fff;
+  text-align: center;
+  
+  .wrapper {
+    padding: $base 0;
+  }
+  
+  p {
+    @include font-size(24px);
+    display: inline-block;
+  }
+  
+  p:last-child {
+    margin-left: 32px;
+  }
+}
 
 .lets-dance {
   background: $orange;

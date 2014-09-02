@@ -64,6 +64,21 @@ a {
       background: darken($dk-orange, 5%);
     }
   }  
+
+  &.dk-blue {
+    background: $dk-blue;
+    &:hover {
+      background: darken($dk-blue, 5%);
+    }
+  }
+  
+  &.navy {
+    background: $navy;
+    &:hover {
+      background: darken($navy, 5%);
+    }
+  }
+
   &.white {
     background: #fff;
     color: $navy;

@@ -1,0 +1,15 @@
+
+@include keyframes(zoomIn) {
+  0% {
+    @include scale(0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  
+  100% {
+    @include scale(1);
+  }
+}
