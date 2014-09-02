@@ -2,10 +2,9 @@
   <div class="wrapper">
   
     <div class="logo">
-      <a href="/" class="logo-mark"><img src="/sites/all/themes/gfcd/assets/images/logo.svg" alt="GFCD"></a>
-      <div class="logo-text">
-        <h1 class="title"><a href="/">Global Female Condom Day</a></h1>
-        <p class="date">September 16, 2014</p>
+      <a href="/" class="logo-full"><img src="/sites/all/themes/gfcd/assets/images/logo.svg" alt="GFCD"></a>
+      <div class="logo-mobile">
+        <a href="/" class="logo-mark"><img src="/sites/all/themes/gfcd/assets/images/logo-mark.svg" alt="GFCD"></a>
         <h1 class="mobile-title">GFCD</h1>
       </div>
     </div>

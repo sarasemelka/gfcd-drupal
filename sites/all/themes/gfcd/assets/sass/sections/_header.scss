@@ -10,8 +10,12 @@
     padding: $base 2%;
   }
 
+  @include bp-min-width($large) {
+    padding: $base*2 2%;
+  }
+
   @include bp-min-width(1300px) {
-    padding: $base 5%;
+    padding: $base*2 5%;
   }
 }
 
@@ -19,70 +23,54 @@
 .logo {
   float: left;
 
-  @include bp-min-max($medium, $xlarge) {
-    @include cf;
+  @include bp-min-width($medium) {
+    position: absolute;
+    top: -30px;
+    left: 2%;
+    z-index: 10;
     float: none;
-    width: 400px;
-    margin: 0 auto $base;
+    width: 180px;
   }
 
-  a {
-    color: $navy;
+  @include bp-min-width(1100px) {
+    top: -35px;
+    width: 232px;
+  }
+
+  @include bp-min-width(1300px) {
+    left: 5%;
+  }
+}
+
+.logo-full {
+  display: none;
   
-    &:hover {
-      color: $orange;
-    }
+  @include bp-min-width($medium) {
+    display: block;
+    width: 180px;
+  }
+
+  @include bp-min-width(1100px) {
+    width: 232px;
+  }
+}
+
+.logo-mobile {
+  float: left;
+  width: 160px;
+
+  @include bp-min-width($medium) {
+    display: none;
+  }
+  
+  .mobile-title {
+    @include font-size(24px);
+    padding-top: 16px;
   }
 }
 
 .logo-mark {
-  display: block;
   float: left;
   width: 60px;
   margin-right: 20px;
-
-  @include bp-min-width($medium) {
-    width: 72px;
-  }
-}
-
-.logo-text {
-  float: left;
-  padding-top: 17px;
-
-  @include bp-min-width($medium) {
-    padding-top: 12px;
-  }
-  
-  .title {
-    font-size: 24px;
-    line-height: 1;
-    font-weight: $bold;
-
-    @include bp-max-width($medium) {
-      display: none;
-    }
-  }
-  
-  .date {
-    float: left;
-    clear: left;
-    color: $navy;
-    font-size: 19px;
-
-    @include bp-max-width($medium) {
-      display: none;
-    }
-  }
-
-  .mobile-title {
-    font-size: 24px;
-    line-height: 1;
-    font-weight: $bold;
-
-    @include bp-min-width($medium) {
-      display: none;
-    }
-  }
-
 }
