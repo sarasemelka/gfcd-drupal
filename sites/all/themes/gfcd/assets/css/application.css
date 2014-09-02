@@ -1006,6 +1006,7 @@ button {
 
 .page-node-3 .hero {
   position: relative;
+  padding-bottom: 36px;
   background: #212121 url('../images/hero.jpg?1408314303') no-repeat center top;
   background-size: cover;
   border-top: 6px solid #ecf0f1;
