@@ -4,7 +4,17 @@
   text-align: center;
 
   [class*="col-"] {
-    padding: $base 3%;
+    margin-bottom: $base*2;
+    padding: 0 5%;
+
+    @include bp-min-width($small) {
+      margin-bottom: 0;
+      padding: $base 3%;
+    }
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   
   .icon {
@@ -42,10 +52,14 @@
   background: $creme;
 
   [class*="col-"] {
-    padding: $base*2 5%;
+    padding: $base*1.5 5%;
     text-align: center;
     border-top: 1px solid $lt-grey;
     
+    @include bp-min-width($small) {
+      padding: $base*2 5%;
+    }
+
     @include bp-min-width($large) {
       padding: $base*3 2%;
     }
