@@ -367,7 +367,10 @@ em {
   font-weight: 700;
 }
 
-/* $sprite: image-url("sprite.svg"); */
+.body img {
+  height: auto !important;
+}
+
 [class*="icon-"] {
   display: inline-block;
   /*   background: $sprite no-repeat 0 0; */

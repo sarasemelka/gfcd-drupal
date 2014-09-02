@@ -1,5 +1,7 @@
 
-/* $sprite: image-url("sprite.svg"); */
+.body img {
+  height: auto !important;
+}
 
 $hero: image-url("hero.jpg");
 $hero-int-01: image-url("hero-int-01.jpg");
