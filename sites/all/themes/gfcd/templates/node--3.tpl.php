@@ -43,7 +43,7 @@
 <section class="bottom">
     
     <div class="col-1-2 block-get-involved">
-      <h3 class="title-block">Get Involved</h3>
+      <h3 class="block-title">Get Involved</h3>
       <ul class="social-links">
         <li><a href="https://twitter.com/natlfccoalition" class="ss-icon ss-social-circle">twitter</a></li>
         <li><a href="https://www.facebook.com/NationalFCCoalition" class="ss-icon ss-social-circle">facebook</a></li>
@@ -55,7 +55,15 @@
         <li>#femalecondoms</li>
       </ul>
     </div>
+    
+    <div class="col-1-2 block-newsletter">
+      <?php
+      $block = block_load('block', '14');
+      print drupal_render(_block_get_renderable_array(_block_render_blocks(array($block))));
+      ?>
+    </div>
 
+<!--
     <div class="col-1-2 block-newsletter">
       <h3 class="title-block">Newsletter Sign Up</h3>
       <p>Ut enim ad minim veniam, quis nostrud exercitation aliquip consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
@@ -73,6 +81,7 @@
         <button type="Submit" value="Sign up" class="btn grey">Sign Up</button>
       </form>
     </div>
+-->
   
 </section> 
 
