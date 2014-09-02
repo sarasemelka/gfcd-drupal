@@ -17,6 +17,8 @@
 }
 
 .page-content {
+  margin-bottom: $base;
+  
   @include bp-min-width($medium) {
     float: left;
     width: 66.66%;

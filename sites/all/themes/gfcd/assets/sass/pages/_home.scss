@@ -88,14 +88,20 @@
   }
 }
 
-.block-newsletter {
+.bottom .block-newsletter {
+  .form-newsletter {
+    margin: 0 auto;
+  }
 
   p {
-    max-width: 460px;
     margin: 0 auto 20px;
-  }
   
+    @include bp-min-width($medium) {
+      max-width: 460px;
+    }
+  }
 }
+
 
 .song-download {
   background: $blue;
@@ -103,16 +109,23 @@
   text-align: center;
   
   .wrapper {
-    padding: $base 0;
+    padding: $base 5%;
   }
   
   p {
     @include font-size(24px);
-    display: inline-block;
+
+    @include bp-min-width($large) {
+      display: inline-block;
+    }
   }
   
   p:last-child {
-    margin-left: 32px;
+    margin-top: 12px;
+
+    @include bp-min-width($large) {
+      margin: 0 0 0 32px;
+    }
   }
 }
 
@@ -121,9 +134,6 @@
   color: #fff;
   text-align: center;
   
-  @include bp-min-width($large) {
-  }
-
   .wrapper {
     padding: $base 5%;
 
