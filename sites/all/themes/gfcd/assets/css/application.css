@@ -509,12 +509,12 @@ em {
 }
 
 [class*='col-'] {
-  float: left;
   width: 100%;
   padding: 0 3%;
 }
 @media (min-width: 800px) {
   [class*='col-'] {
+    float: left;
     padding: 0 18px;
   }
 }
@@ -1199,6 +1199,15 @@ button {
 
 .view-events .col-1-3 {
   position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 24px;
+}
+@media (min-width: 600px) {
+  .view-events .col-1-3 {
+    width: 50%;
+    margin-bottom: 24px;
+  }
 }
 
 .view-events .thumb {
@@ -1227,6 +1236,7 @@ button {
   font-size: 24px;
   font-size: 1.5rem;
   font-weight: 700;
+  text-align: center;
 }
 
 .view-events a {
@@ -1554,7 +1564,6 @@ button {
 }
 
 .event-body {
-  margin-bottom: 48px;
   text-align: center;
 }
 .event-body .page-title:after {
@@ -1564,6 +1573,15 @@ button {
 .event-body .event-location {
   font-size: 24px;
   font-weight: 600;
+}
+
+.event-video {
+  margin-top: 24px;
+}
+@media (min-width: 600px) {
+  .event-video {
+    margin-top: 48px;
+  }
 }
 
 #user-login {
