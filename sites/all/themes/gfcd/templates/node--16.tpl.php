@@ -1,4 +1,4 @@
-<?php /* Newsletter: Thank You Template */ ?>
+<?php /* Form: Thank You Template */ ?>
 
 <section id="main" class="main thank-you">
   <div class="wrapper">
@@ -9,5 +9,3 @@
     
   </div>
 </section>
-
-<?php // dpm($node2); ?> 

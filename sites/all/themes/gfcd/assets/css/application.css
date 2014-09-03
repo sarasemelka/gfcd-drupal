@@ -1619,24 +1619,24 @@ button {
   margin: 0 auto;
 }
 
-.page-node-13 .main {
+.thank-you {
   padding: 48px 0;
   border-top: 1px solid #ecf0f1;
   text-align: center;
 }
 @media (min-width: 800px) {
-  .page-node-13 .main {
+  .thank-you {
     min-height: 400px;
     padding: 120px 0;
   }
 }
-.page-node-13 .main h2 {
+.thank-you h2 {
   margin-bottom: 36px;
   font-size: 50px;
   line-height: 1.1;
   font-style: italic;
 }
-.page-node-13 .main .cta-link {
+.thank-you .cta-link {
   font-size: 24px;
 }
 
