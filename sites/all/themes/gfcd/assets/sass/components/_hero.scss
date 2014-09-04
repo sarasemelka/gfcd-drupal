@@ -76,7 +76,6 @@
   }
 }
 
-
 .page-node-3 .hero {
   position: relative;
   padding-bottom: $base*1.5;
@@ -139,4 +138,8 @@
       opacity: 1;
     }
   }
+}
+
+.page-node-4 .hero {
+  background-image: $hero-int-02;
 }

@@ -1,11 +1,13 @@
 
 .view-events .col-1-3 {
   position: relative;
-  width: 100%;
-  max-width: 400px;
   margin: 0 auto $base;
+  
+  @include bp-max-width($small) {
+    max-width: 400px;
+  }
 
-  @include bp-min-width($small) {
+  @include bp-min-max($small, $medium) {
     width: 50%;
     margin-bottom: $base;
   }
