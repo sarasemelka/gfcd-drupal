@@ -929,7 +929,6 @@ button {
   background: #2ecc71;
 }
 .messages.error {
-  display: none;
   background: #e74c3c;
 }
 .messages .krumo-root {
