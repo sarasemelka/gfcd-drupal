@@ -883,12 +883,16 @@ fieldset .title,
 }
 .form-checkboxes input {
   display: inline-block;
+  vertical-align: middle;
   width: 16px;
   height: 16px;
+  background: #fff;
+  border: 1px solid #bdc3c7;
 }
 
 .form-checkboxes label {
   display: inline-block;
+  vertical-align: middle;
   margin: 0 0 0 10px;
   cursor: pointer;
 }
