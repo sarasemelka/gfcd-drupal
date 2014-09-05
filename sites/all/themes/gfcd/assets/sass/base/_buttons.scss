@@ -30,7 +30,7 @@ a {
 .btn {
   @extend %btn;
   
-    &.red {
+  &.red {
     background: $red;
     &:hover {
       background: $dk-red;
@@ -64,6 +64,13 @@ a {
       background: darken($dk-orange, 5%);
     }
   }  
+
+  &.blue {
+    background: $blue;
+    &:hover {
+      background: darken($blue, 5%);
+    }
+  }
 
   &.dk-blue {
     background: $dk-blue;

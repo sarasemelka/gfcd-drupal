@@ -660,6 +660,12 @@ button:hover {
 .btn.dk-orange:hover {
   background: #b94a00;
 }
+.btn.blue {
+  background: #3498db;
+}
+.btn.blue:hover {
+  background: #258cd1;
+}
 .btn.dk-blue {
   background: #2980b9;
 }
@@ -919,6 +925,7 @@ button {
   background: #2ecc71;
 }
 .messages.error {
+  display: none;
   background: #e74c3c;
 }
 .messages .krumo-root {
