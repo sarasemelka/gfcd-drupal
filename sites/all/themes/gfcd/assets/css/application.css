@@ -386,6 +386,13 @@ em {
 .body img {
   height: auto !important;
 }
+@media (max-width: 600px) {
+  .body img {
+    display: block;
+    margin: 18px 0 !important;
+    float: none !important;
+  }
+}
 
 [class*="icon-"] {
   display: inline-block;

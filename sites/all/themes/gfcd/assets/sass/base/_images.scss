@@ -1,6 +1,12 @@
 
 .body img {
   height: auto !important;
+
+  @include bp-max-width($small) {
+    display: block;
+    margin: 18px 0 !important;
+    float: none !important;
+  }
 }
 
 $hero: image-url("hero.jpg");
