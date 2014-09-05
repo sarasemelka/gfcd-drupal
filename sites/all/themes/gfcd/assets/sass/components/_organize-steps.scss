@@ -5,29 +5,45 @@
   
   .step {
     position: relative;
-    margin-bottom: $base*2;
-    padding: 0 40px $base*2 150px;
+    margin-bottom: $base;
+    padding: 0 40px $base 70px;
     border-bottom: 1px solid $lt-grey;
+
+    @include bp-min-width($xsmall) {
+      padding: 0 40px $base 110px;
+    }
 
     @include bp-min-width($medium) {
       min-height: 168px;
+      margin-bottom: $base*2;
+      padding: 0 40px $base*2 150px;
     }
   }
 }
 
 .step-number {
-  @include font-size(72px);
+  @include font-size(40px);
   position: absolute;
   top: 0;
   left: 0;
+  width: 50px;
+  height: 50px;
   background: $orange;
   border-radius: 50%;
   color: #fff;
-  line-height: 1;
+  line-height: 46px;
   font-weight: $bold;
   text-align: center;
 
+  @include bp-min-width($xsmall) {
+    @include font-size(52px);
+    width: 80px;
+    height: 80px;
+    line-height: 76px;
+  }
+
   @include bp-min-width($medium) {
+    @include font-size(72px);
     width: 120px;
     height: 120px;
     line-height: 110px;
@@ -47,7 +63,6 @@
 }
 
 .organize-steps .step:nth-child(6) {
-  
   p {
     margin-bottom: 16px;
   }
