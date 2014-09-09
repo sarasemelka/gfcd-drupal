@@ -114,7 +114,7 @@ em {
 .body ol {
   @include font-size(18px);
   margin-bottom: $base;
-  line-height: 1.4;
+  line-height: 1.5;
 
   &:last-child, &.label {
     margin-bottom: 0;
@@ -123,7 +123,7 @@ em {
 
 .body ul,
 .body ol {
-  margin: 1em 0 1em 1.5em;
+  margin: $base 0 $base 1.5em;
   
   li {
     margin-bottom: 12px;

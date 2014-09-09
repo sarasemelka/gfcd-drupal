@@ -352,7 +352,7 @@ em {
   font-size: 18px;
   font-size: 1.125rem;
   margin-bottom: 24px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 .body p:last-child, .body p.label,
 .body ul:last-child,
@@ -364,7 +364,7 @@ em {
 
 .body ul,
 .body ol {
-  margin: 1em 0 1em 1.5em;
+  margin: 24px 0 24px 1.5em;
 }
 .body ul li,
 .body ol li {
@@ -1965,21 +1965,20 @@ button {
 }
 
 .sidebar .block {
-  margin-bottom: 24px;
   padding: 16px 20px 20px;
   background: #fff;
-  border: 1px solid #ecf0f1;
+  border-bottom: 1px solid #ecf0f1;
 }
 @media (min-width: 800px) {
   .sidebar .block {
-    margin-bottom: 36px;
-    padding: 16px 20px 20px;
+    padding: 36px 24px;
   }
 }
-.sidebar .block:last-of-type {
-  margin-bottom: 0;
+.sidebar .block:first-of-type {
+  border-top: 1px solid #ecf0f1;
 }
 .sidebar .block-title {
+  color: #e74c3c;
   margin-bottom: 12px;
 }
 .sidebar p {
@@ -1995,6 +1994,38 @@ button {
   margin-bottom: 12px;
 }
 
+/*
+.sidebar {
+  .block {
+    margin-bottom: $base;
+    padding: 16px 20px 20px;
+    background: #fff;
+    border: 1px solid $lt-grey;
+
+    @include bp-min-width($medium) {
+      margin-bottom: $base*1.5;
+      padding: 16px 20px 20px;
+    }
+    
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  
+  .block-title {
+    margin-bottom: 12px;
+  }
+  
+  p {
+    @include font-size(15px);
+    margin-bottom: 12px;
+    
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+*/
 .footer {
   *zoom: 1;
   color: #95a5a6;
