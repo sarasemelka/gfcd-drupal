@@ -38,30 +38,19 @@
 }
 
 .main-nav li a {
+  @include font-size(18px);
   display: block;
   padding: 0.5em 1em;
+  background: $red;
+  color: #fff;
   font-weight: $semi;
-  
-  &:hover, &.active {
-    color: #fff;
-    background: $dk-red;
-  }
-  
-  @include bp-max-width($mlarge) {
-    background: $red;
-    color: $lt-grey;
-    font-size: 18px;
-  }
-
-  @include bp-min-width($medium) {
-    text-align: center;
-  }
+  text-align: center;
   
   @include bp-min-width($mlarge) {
     display: block;
     padding: 0;
+    background: none;
     color: $navy;
-    font-size: 16px;
     
     &:hover, &.active {
       color: $navy;
@@ -87,7 +76,23 @@
     }
     
   }
+
+  &:hover, &.active {
+    color: #fff;
+    background: $dk-red;
+  
+    @include bp-min-width($large) {
+      color: $navy;
+      background: none;
+  
+      &:after {
+        opacity: 1;
+        bottom: -4px;
+      }
+    }
+  }
 }
+
 
 /** Mobile Menu Button **/
 

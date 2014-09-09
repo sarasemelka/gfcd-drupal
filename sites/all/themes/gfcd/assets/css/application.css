@@ -237,7 +237,7 @@ a {
 }
 
 body {
-  color: #777777;
+  color: #666666;
   font: 400 1em/1.5em "Source Sans Pro", Helvetica, arial, sans-serif;
 }
 
@@ -276,14 +276,14 @@ h3 {
 }
 
 h4 {
-  font-size: 18px;
-  font-size: 1.125rem;
-  font-weight: 600;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 h5 {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
 }
 
@@ -295,8 +295,8 @@ h5 {
 }
 @media (min-width: 800px) {
   .page-title {
-    font-size: 52px;
-    font-size: 3.25rem;
+    font-size: 60px;
+    font-size: 3.75rem;
     margin-bottom: 36px;
     padding-bottom: 36px;
   }
@@ -380,13 +380,18 @@ em {
 }
 
 .body h2 {
-  margin-bottom: 12px;
+  color: #333333;
+  margin-bottom: 18px;
 }
 
 .body h3 {
-  margin-bottom: 6px;
+  margin-bottom: 12px;
   font-weight: 700;
   line-height: 28px;
+}
+
+.body h4 {
+  margin-bottom: 6px;
 }
 
 .body img {
@@ -601,7 +606,7 @@ em {
 }
 
 .main {
-  background: #fefdf6;
+  background: #fefcf4;
   border-top: 1px solid #ecf0f1;
   border-bottom: 1px solid #ecf0f1;
 }
@@ -613,6 +618,7 @@ em {
   .page-content {
     float: left;
     width: 66.66%;
+    margin-bottom: 0;
     padding: 0 5% 0 3%;
   }
 }
@@ -718,7 +724,7 @@ button:hover {
   background: #95a5a6;
 }
 .btn.grey:hover {
-  background: #777777;
+  background: #666666;
 }
 .btn.large {
   font-size: 24px;
@@ -824,7 +830,7 @@ select {
   padding: 10px;
   border: 1px solid #bdc3c7;
   border-radius: 2px;
-  color: #777777;
+  color: #666666;
   font: 400 1em/1em "Source Sans Pro", Helvetica, arial, sans-serif;
 }
 @media (min-width: 800px) {
@@ -962,12 +968,12 @@ button {
 }
 .messages .krumo-root {
   text-align: left;
-  color: #212121;
+  color: #333333;
 }
 
 .hero {
   position: relative;
-  background: #212121 url('../images/hero-int-01.jpg?1409853054') no-repeat center center;
+  background: #333333 url('../images/hero-int-01.jpg?1409853054') no-repeat center center;
   background-size: cover;
   text-align: center;
   color: #fff;
@@ -1046,7 +1052,7 @@ button {
 .page-node-3 .hero {
   position: relative;
   padding-bottom: 36px;
-  background: #212121 url('../images/hero.jpg?1408314303') no-repeat center top;
+  background: #333333 url('../images/hero.jpg?1408314303') no-repeat center top;
   background-size: cover;
   border-top: 6px solid #ecf0f1;
   text-align: center;
@@ -1227,7 +1233,7 @@ button {
 }
 
 .organize-steps h2 {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   color: #e74c3c;
   font-weight: 700;
   font-style: italic;
@@ -1235,6 +1241,7 @@ button {
 .organize-steps p {
   font-size: 18px;
   font-size: 1.125rem;
+  line-height: 1.5;
 }
 
 .organize-steps .step:nth-child(6) p {
@@ -1442,7 +1449,7 @@ button {
 
 .bottom {
   *zoom: 1;
-  background: #fefdf6;
+  background: #fefcf4;
 }
 .bottom:before, .bottom:after {
   content: " ";
@@ -1619,7 +1626,7 @@ button {
 
 .toolkit {
   background: #fdf1de;
-  color: #212121;
+  color: #333333;
   text-align: center;
 }
 .toolkit .body ul {
@@ -1670,7 +1677,7 @@ button {
 
 #user-login {
   padding: 48px 5%;
-  background: #fefdf6;
+  background: #fefcf4;
   border-top: 1px solid #ecf0f1;
   border-bottom: 1px solid #ecf0f1;
 }
@@ -1830,32 +1837,21 @@ button {
 }
 
 .main-nav li a {
+  font-size: 18px;
+  font-size: 1.125rem;
   display: block;
   padding: 0.5em 1em;
-  font-weight: 600;
-}
-.main-nav li a:hover, .main-nav li a.active {
+  background: #e74c3c;
   color: #fff;
-  background: #c0392b;
-}
-@media (max-width: 1100px) {
-  .main-nav li a {
-    background: #e74c3c;
-    color: #ecf0f1;
-    font-size: 18px;
-  }
-}
-@media (min-width: 800px) {
-  .main-nav li a {
-    text-align: center;
-  }
+  font-weight: 600;
+  text-align: center;
 }
 @media (min-width: 1100px) {
   .main-nav li a {
     display: block;
     padding: 0;
+    background: none;
     color: #2c3e50;
-    font-size: 16px;
   }
   .main-nav li a:hover, .main-nav li a.active {
     color: #2c3e50;
@@ -1879,6 +1875,20 @@ button {
     width: 100%;
     height: 2px;
     background: #3498db;
+  }
+}
+.main-nav li a:hover, .main-nav li a.active {
+  color: #fff;
+  background: #c0392b;
+}
+@media (min-width: 1000px) {
+  .main-nav li a:hover, .main-nav li a.active {
+    color: #2c3e50;
+    background: none;
+  }
+  .main-nav li a:hover:after, .main-nav li a.active:after {
+    opacity: 1;
+    bottom: -4px;
   }
 }
 

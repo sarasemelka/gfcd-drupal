@@ -52,13 +52,14 @@
 
 .organize-steps {
   h2 {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     color: $red;
     font-weight: $bold;
     font-style: italic;
   }
   p {
     @include font-size(18px);
+    line-height: 1.5;
   }
 }
 
