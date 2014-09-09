@@ -96,10 +96,6 @@ h5 {
   color: $navy;
 }
 
-p {
-
-}
-
 strong {
   font-weight: $bold;
 }
@@ -118,6 +114,7 @@ em {
 .body ol {
   @include font-size(18px);
   margin-bottom: $base;
+  line-height: 1.4;
 
   &:last-child, &.label {
     margin-bottom: 0;
@@ -126,7 +123,11 @@ em {
 
 .body ul,
 .body ol {
-  margin-left: 1.5em;
+  margin: 1em 0 1em 1.5em;
+  
+  li {
+    margin-bottom: 12px;
+  }
 }
 
 .body ul li {
@@ -142,6 +143,7 @@ em {
 }
 
 .body h3 {
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   font-weight: $bold;
+  line-height: 28px;
 }
