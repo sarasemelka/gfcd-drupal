@@ -29,6 +29,10 @@
   }
 }
 
+.sidebar .block-join-movement p:last-child {
+  @include font-size(16px);
+}
+
 .sidebar .block-newsletter {
   p {
     margin-bottom: 12px;

@@ -25,9 +25,9 @@
   
     <div class="follow-us">
       <ul class="social-links">
-        <li><a href="https://twitter.com/natlfccoalition" class="ss-icon ss-social-circle">twitter</a></li>
-        <li><a href="https://www.facebook.com/NationalFCCoalition" class="ss-icon ss-social-circle">facebook</a></li>
-        <li><a href="https://www.youtube.com/user/globalhealthcatalyst/" class="ss-icon ss-social-circle">youtube</a></li>
+        <li><a href="https://twitter.com/natlfccoalition" target="_blank" class="ss-icon ss-social-circle">twitter</a></li>
+        <li><a href="https://www.facebook.com/NationalFCCoalition" target="_blank" class="ss-icon ss-social-circle">facebook</a></li>
+        <li><a href="https://www.youtube.com/user/globalhealthcatalyst/" target="_blank" class="ss-icon ss-social-circle">youtube</a></li>
       </ul>
     </div>
           

@@ -975,6 +975,7 @@ button {
   position: relative;
   background: #333333 url('../images/hero-int-01.jpg?1409853054') no-repeat center center;
   background-size: cover;
+  border-top: 1px solid #ecf0f1;
   text-align: center;
   color: #fff;
 }
@@ -1052,9 +1053,8 @@ button {
 .page-node-3 .hero {
   position: relative;
   padding-bottom: 36px;
-  background: #333333 url('../images/hero.jpg?1408314303') no-repeat center top;
+  background: #333333 url('../images/hero.jpg?1410292973') no-repeat center top;
   background-size: cover;
-  border-top: 6px solid #ecf0f1;
   text-align: center;
   color: #fff;
 }
@@ -1751,7 +1751,7 @@ button {
 }
 @media (min-width: 1100px) {
   .logo {
-    top: -35px;
+    top: -32px;
     width: 232px;
   }
 }
@@ -1998,6 +1998,11 @@ button {
 }
 .sidebar p:last-of-type {
   margin-bottom: 0;
+}
+
+.sidebar .block-join-movement p:last-child {
+  font-size: 16px;
+  font-size: 1rem;
 }
 
 .sidebar .block-newsletter p {

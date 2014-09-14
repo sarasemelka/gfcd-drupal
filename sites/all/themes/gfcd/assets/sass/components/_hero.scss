@@ -3,6 +3,7 @@
   position: relative;
   background: $black $hero-int-01 no-repeat center center;
   background-size: cover;
+  border-top: 1px solid $lt-grey;
   text-align: center;
   color: #fff;
 
@@ -81,7 +82,6 @@
   padding-bottom: $base*1.5;
   background: $black $hero no-repeat center top;
   background-size: cover;
-  border-top: 6px solid $lt-grey;
   text-align: center;
   color: #fff;
   
