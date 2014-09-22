@@ -114,7 +114,7 @@
     scrollTo();
     menuToggle();
     newsletterValidation();
-    // iconZoomIn();
+    iconZoomIn();
     eventSlider();
     fitVids();
     

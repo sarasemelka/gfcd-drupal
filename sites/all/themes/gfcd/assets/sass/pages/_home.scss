@@ -19,10 +19,6 @@
   
   .icon {
     @include scale(0);
-    width: 132px;
-    height: 132px;
-    background: $red;
-    border-radius: 50%;
     margin: 0 auto $base;
   }
   
@@ -35,6 +31,10 @@
   p {
     margin-bottom: $base;
     padding: 0 5%;
+    
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
   
   .icon-arrow-right {

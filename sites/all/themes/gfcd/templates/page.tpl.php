@@ -2,9 +2,9 @@
   <div class="wrapper">
   
     <div class="logo">
-      <a href="/" class="logo-full"><img src="/sites/all/themes/gfcd/assets/images/logo.svg" alt="GFCD"></a>
+      <a href="/" class="logo-full"><img src="<?php print base_path() . path_to_theme(); ?>/assets/images/logo.svg" alt="GFCD"></a>
       <div class="logo-mobile">
-        <a href="/" class="logo-mark"><img src="/sites/all/themes/gfcd/assets/images/logo-mark.svg" alt="GFCD"></a>
+        <a href="/" class="logo-mark"><img src="<?php print base_path() . path_to_theme(); ?>/assets/images/logo-mark.svg" alt="GFCD"></a>
         <h1 class="mobile-title">GFCD</h1>
       </div>
     </div>
