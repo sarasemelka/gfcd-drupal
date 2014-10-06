@@ -56,7 +56,7 @@
     <ul class="social-links">
       <li><a href="https://twitter.com/natlfccoalition" target="_blank" class="ss-icon ss-social-circle">twitter</a></li>
       <li><a href="https://www.facebook.com/NationalFCCoalition" target="_blank" class="ss-icon ss-social-circle">facebook</a></li>
-      <li><a href="https://www.youtube.com/user/globalhealthcatalyst/" target="_blank" class="ss-icon ss-social-circle">youtube</a></li>
+      <li><a href="https://www.youtube.com/channel/UC049yC9z62wwBuG-DfX9UYg" target="_blank" class="ss-icon ss-social-circle">youtube</a></li>
     </ul>
     <ul class="hashtags">
       <li>#Dance4Demand</li>
