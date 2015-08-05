@@ -13,7 +13,7 @@
   ::-webkit-input-placeholder {@content}
   :-moz-placeholder {@content}
   ::-moz-placeholder {@content}
-  :-ms-input-placeholder {@content}  
+  :-ms-input-placeholder {@content}
 }
 
 
@@ -40,17 +40,17 @@
 
 // ANIMATIONS
 @mixin keyframes($name) {
-    @-webkit-keyframes $name { @content; }
-    @-moz-keyframes $name { @content; }
-    @-o-keyframes $name { @content; }
-    @-keyframes $name { @content; }
+  @-webkit-keyframes $name { @content; }
+  @-moz-keyframes $name { @content; }
+  @-o-keyframes $name { @content; }
+  @keyframes $name { @content; }
 }
 
 @mixin animation($content) {
-    -webkit-animation: $content;
-    -moz-animation: $content;
-    -o-animation: $content;
-    animation: $content;
+  -webkit-animation: $content;
+  -moz-animation: $content;
+  -o-animation: $content;
+  animation: $content;
 }
 
 

@@ -2,50 +2,50 @@
 .home-info-blocks {
   @include cf;
   text-align: center;
+}
 
-  [class*="col-"] {
-    margin-bottom: $base*2;
-    padding: 0 5%;
+.home-info-blocks [class*="col-"] {
+  margin-bottom: $base*2;
+  padding: 0 5%;
 
-    @include bp-min-width($small) {
-      margin-bottom: 0;
-      padding: $base 3%;
-    }
-    
-    &:last-child {
-      margin-bottom: 0;
-    }
+  @include bp-min-width($small) {
+    margin-bottom: 0;
+    padding: $base 3%;
   }
-  
-  .icon {
-    @include scale(0);
-    margin: 0 auto $base;
-  }
-  
-  h2 {
-    max-width: 280px;
-    margin: 0 auto 12px;
-    font-weight: $bold;
-  }
-  
-  p {
-    margin-bottom: $base;
-    padding: 0 5%;
-    
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-  }
-  
-  .icon-arrow-right {
-    margin-left: 2px;
-    vertical-align: -5px;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
-.animate .icon {
- @include animation(zoomIn 1s 0.5s both);
+.home-info-blocks .icon {
+  // @include scale(0);
+  margin: 0 auto $base;
 }
+
+.home-info-blocks h2 {
+  max-width: 280px;
+  margin: 0 auto 12px;
+  font-weight: $bold;
+}
+
+.home-info-blocks p {
+  margin-bottom: $base;
+  padding: 0 5%;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.home-info-blocks .icon-arrow-right {
+  margin-left: 2px;
+  vertical-align: -5px;
+}
+
+// .animate .icon {
+//   @include animation(zoomIn 1s 0.5s);
+// }
 
 .bottom {
   @include cf;
@@ -55,7 +55,7 @@
     padding: $base*1.5 5%;
     text-align: center;
     border-top: 1px solid $lt-grey;
-    
+
     @include bp-min-width($small) {
       padding: $base*2 5%;
     }
@@ -95,7 +95,7 @@
   line-height: 1.5;
   font-weight: $semi;
   font-style: italic;
-  
+
   li {
     display: inline-block;
     margin: 0 12px;
@@ -109,7 +109,7 @@
 
   p {
     margin: 0 auto 20px;
-  
+
     @include bp-min-width($medium) {
       max-width: 460px;
     }
@@ -121,11 +121,11 @@
   background: $blue;
   color: #fff;
   text-align: center;
-  
+
   .wrapper {
     padding: $base 5%;
   }
-  
+
   p {
     @include font-size(24px);
 
@@ -133,7 +133,7 @@
       display: inline-block;
     }
   }
-  
+
   p:last-child {
     margin-top: 12px;
 
@@ -147,7 +147,7 @@
   background: $orange;
   color: #fff;
   text-align: center;
-  
+
   .wrapper {
     padding: $base 5%;
 
@@ -164,16 +164,16 @@
       display: inline;
     }
   }
-  
+
   .message {
     @include bp-max-width($large) {
       margin-bottom: 12px;
     }
   }
-  
+
   .btn {
     margin-top: 12px;
-    
+
     @include bp-min-width($large) {
       margin-left: 32px;
     }
