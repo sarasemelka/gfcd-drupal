@@ -147,35 +147,37 @@
   background: $orange;
   color: #fff;
   text-align: center;
+}
 
-  .wrapper {
-    padding: $base 5%;
+.lets-dance .wrapper {
+  padding: $base 5%;
 
-    @include bp-min-width($medium) {
-      padding: $base 2%;
-    }
+  @include bp-min-width($medium) {
+    padding: $base 2%;
   }
+}
 
-  p {
-    font-size: 24px;
-    line-height: 28px;
+.lets-dance p {
+  font-size: 24px;
+  line-height: 28px;
 
-    @include bp-min-width($large) {
-      display: inline;
-    }
+  @include bp-min-width($large) {
+    display: inline;
   }
+}
 
-  .message {
-    @include bp-max-width($large) {
-      margin-bottom: 12px;
-    }
+.lets-dance .message {
+  @include bp-max-width($large) {
+    margin-bottom: 12px;
   }
+}
 
-  .btn {
+.lets-dance .btn {
+  @include bp-max-width($large) {
     margin-top: 12px;
+  }
 
-    @include bp-min-width($large) {
-      margin-left: 32px;
-    }
+  @include bp-min-width($large) {
+    margin-left: 32px;
   }
 }

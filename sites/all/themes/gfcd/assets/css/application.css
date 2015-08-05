@@ -1523,6 +1523,7 @@ button {
   color: #fff;
   text-align: center;
 }
+
 .lets-dance .wrapper {
   padding: 24px 5%;
 }
@@ -1531,6 +1532,7 @@ button {
     padding: 24px 2%;
   }
 }
+
 .lets-dance p {
   font-size: 24px;
   line-height: 28px;
@@ -1540,13 +1542,17 @@ button {
     display: inline;
   }
 }
+
 @media (max-width: 1000px) {
   .lets-dance .message {
     margin-bottom: 12px;
   }
 }
-.lets-dance .btn {
-  margin-top: 12px;
+
+@media (max-width: 1000px) {
+  .lets-dance .btn {
+    margin-top: 12px;
+  }
 }
 @media (min-width: 1000px) {
   .lets-dance .btn {
