@@ -910,8 +910,46 @@ fieldset .title,
 }
 
 /** Radio ============**/
-.form-radio label, .form-radio input {
+.form-radios {
+  *zoom: 1;
+}
+.form-radios:before, .form-radios:after {
+  content: " ";
+  display: block;
+}
+.form-radios:after {
+  clear: both;
+}
+
+.form-radios .form-item {
+  float: left;
+  margin-right: 20px;
+}
+
+.form-radios label {
   display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.form-radios input[type="radio"] {
+  display: inline-block;
+  vertical-align: middle;
+  outline: none;
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  border: 1px solid #bdc3c7;
+  box-shadow: inset 0 0 0 4px #fff;
+  border-radius: 50%;
+}
+
+.form-radios input[type="radio"]:checked {
+  background: #3498db;
+}
+
+.form-radios input[type="password"] {
+  margin-top: 6px;
 }
 
 /** Buttons ============**/
