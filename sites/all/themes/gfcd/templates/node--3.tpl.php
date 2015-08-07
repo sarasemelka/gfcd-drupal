@@ -77,7 +77,7 @@
 <section class="lets-dance">
   <div class="wrapper">
     <?php
-    $block = block_load('block', '16');
+    $block = block_load('block', '18');
     print drupal_render(_block_get_renderable_array(_block_render_blocks(array($block))));
     ?>
   </div>
