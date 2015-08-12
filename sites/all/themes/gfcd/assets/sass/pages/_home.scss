@@ -22,6 +22,10 @@
   @include scale(0);
   @include transition(0.25s ease-in 1s);
   margin: 0 auto $base;
+
+  img {
+    max-width: 200px;
+  }
 }
 
 .home-info-blocks.animate .icon {
