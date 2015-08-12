@@ -434,7 +434,7 @@ em {
 }
 */
 @-webkit-keyframes $name {
-  0% {
+  from {
     -moz-transform: scale(0, 0);
     -ms-transform: scale(0, 0);
     -webkit-transform: scale(0, 0);
@@ -452,7 +452,7 @@ em {
   }
 }
 @-moz-keyframes $name {
-  0% {
+  from {
     -moz-transform: scale(0, 0);
     -ms-transform: scale(0, 0);
     -webkit-transform: scale(0, 0);
@@ -470,7 +470,7 @@ em {
   }
 }
 @-o-keyframes $name {
-  0% {
+  from {
     -moz-transform: scale(0, 0);
     -ms-transform: scale(0, 0);
     -webkit-transform: scale(0, 0);
@@ -488,7 +488,7 @@ em {
   }
 }
 @keyframes $name {
-  0% {
+  from {
     -moz-transform: scale(0, 0);
     -ms-transform: scale(0, 0);
     -webkit-transform: scale(0, 0);
@@ -1430,7 +1430,23 @@ button {
 }
 
 .home-info-blocks .icon {
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -moz-transition: ease-in 0.25s 1s;
+  -o-transition: ease-in 0.25s 1s;
+  -webkit-transition: ease-in 0.25s;
+  -webkit-transition-delay: 1s;
+  transition: ease-in 0.25s 1s;
   margin: 0 auto 24px;
+}
+
+.home-info-blocks.animate .icon {
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
 }
 
 .home-info-blocks h2 {

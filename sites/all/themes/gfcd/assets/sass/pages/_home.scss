@@ -19,8 +19,13 @@
 }
 
 .home-info-blocks .icon {
-  // @include scale(0);
+  @include scale(0);
+  @include transition(0.25s ease-in 1s);
   margin: 0 auto $base;
+}
+
+.home-info-blocks.animate .icon {
+  @include scale(1);
 }
 
 .home-info-blocks h2 {
@@ -42,10 +47,6 @@
   margin-left: 2px;
   vertical-align: -5px;
 }
-
-// .animate .icon {
-//   @include animation(zoomIn 1s 0.5s);
-// }
 
 .bottom {
   @include cf;
