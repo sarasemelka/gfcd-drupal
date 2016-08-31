@@ -58,11 +58,10 @@
       <li><a href="https://www.facebook.com/NationalFCCoalition" target="_blank" class="ss-icon ss-social-circle">facebook</a></li>
       <li><a href="https://www.youtube.com/channel/UC049yC9z62wwBuG-DfX9UYg" target="_blank" class="ss-icon ss-social-circle">youtube</a></li>
     </ul>
-    <ul class="hashtags">
-      <li>#Dance4Demand</li>
-      <li>#GFCD2015</li>
-      <li>#femalecondoms</li>
-    </ul>
+    <?php
+    $block = block_load('block', '19');
+    print drupal_render(_block_get_renderable_array(_block_render_blocks(array($block))));
+    ?>
   </div>
 
   <div class="col-1-2 block-newsletter">
