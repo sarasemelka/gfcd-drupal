@@ -21,7 +21,7 @@
     <div class="home-info-blocks">
 
       <div class="col-1-3">
-        <div class="icon"><img src="<?php print base_path() . path_to_theme(); ?>/assets/images/icon-home-01.svg" alt="Dance4Demand Icon"></div>
+        <div class="icon"><img src="<?php print base_path() . path_to_theme(); ?>/assets/images/icon-home-05.svg" alt="Dance4Demand Icon"></div>
         <?php
         $block = module_invoke('block', 'block_view', '1');
         print render($block['content']);
